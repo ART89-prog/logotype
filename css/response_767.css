@@ -1327,6 +1327,23 @@
         margin-left: 15px;
     }
 
+    .statistic_period {
+        font-size: 16px;
+    }
+    .statistic_period span {
+        font-size: 16px;
+        padding: 6px 8px;
+    }
+    .statistic_title {
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+    .statistic_subtitle {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+
 
 
 

@@ -1501,5 +1501,8 @@
         margin-bottom: 20px;
         margin-left: 12px;
     }
+    .statistics table {
+        margin-bottom: 0;
+    }
 
 }
