@@ -17,51 +17,24 @@ $(() => {
 
 
 
-	// $('body').on('click', '.details_item-right .details_item-link-yellow', function (e) {
-	// 	e.preventDefault()
-	// 	$(this).parent().parent().next('.details_item-body').slideToggle();
-	// });
+	$('body').on('click', '.details_item-right .details_item-link-yellow', function (e) {
+		e.preventDefault()
+		$(this).parent().parent().next('.details_item-body').slideToggle();
+		if($(this).hasClass("active"))
+		{
+			$(this).html('<span>Свернуть</span><svg class="icon"><use xlink:href="images/sprite.svg#turn"></use></svg>').removeClass("active");
+		}
+		else{
+			$(this).html('<span>Подробнее</span><svg class="icon"><use xlink:href="images/sprite.svg#link-more"></use></svg>').addClass("active");
+		}
+		
 
-	// $('body').on('click', '.details_item-body .details_item-link-yellow', function (e) {
-	// 	e.preventDefault()
-	// 	$(this).parent().hide('.details_item-body');
-	// });
+		
+	});
 
-
-	// $('body').on('click', '.details_item-link', function (e) {
-	// 	e.preventDefault()
-	// 	$(this).parent().parent().next().slideToggle();
-	// 	if($(this).hasClass("open"))
-	// 	{
-	// 		$(this).removeClass("open");
-	// 	}
-	// 	else
-	// 	{
-	// 		$(this).addClass("open");
-	// 	}
-	// });
-
-
-	// $('.details_item-link').click(function(){
-	// 	$(this).parent().parent().next().slideToggle(300, function(){
-	// 		if ($(this).is(':hidden')) {
-	// 			$('.details_item-link').html('Показать текст');
-	// 		} else {
-	// 			$('.details_item-link').html('Скрыть текст');
-	// 		}							
-	// 	});
-	// 	return false;
-	// });
-
-
-	$('.details_item-link').click(function(){
-		$(this).parent().parent().next().toggleClass('hide');	
-		if ($$(this).parent().parent().next().hasClass('hide')) {
-			$('.details_item-link').html('Подробнее');
-		} else {
-			$('.details_item-link').html('Скрыть');
-		}		
-		return false;
+	$('body').on('click', '.details_item-body .details_item-link-yellow', function (e) {
+		e.preventDefault()
+		$(this).parent().hide('.details_item-body');
 	});
 
 

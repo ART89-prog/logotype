@@ -237,15 +237,9 @@
   </symbol>
 
   <symbol width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="link-more">
-    <circle cx="10" cy="10" r="10" fill="#0B00D8"/>
+    <circle cx="10" cy="10" r="10" fill="var(--main_color)"/>
     <circle cx="10" cy="10" r="10" fill="url(#paint0_linear_986_15754)"/>
     <path d="M11.4439 10.0001L8.25871 12.9855C7.9136 13.3089 7.9136 13.834 8.25871 14.1575C8.60383 14.4809 9.16402 14.4809 9.50913 14.1575L13.3554 10.5525C13.6814 10.247 13.6814 9.75238 13.3554 9.44767L9.50913 5.84266C9.16402 5.51919 8.60383 5.51919 8.25871 5.84266C7.9136 6.16613 7.9136 6.69117 8.25871 7.01464L11.4439 10.0001Z" fill="white"/>
-    <defs>
-    <linearGradient id="paint0_linear_986_15754" x1="-8.72257" y1="9.37015" x2="10.0177" y2="28.4283" gradientUnits="userSpaceOnUse">
-    <stop stop-color="#0B00D8"/>
-    <stop offset="1" stop-color="#0500AF"/>
-    </linearGradient>
-    </defs>
   </symbol>
 
   <symbol width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" id="remark">
@@ -259,7 +253,7 @@
 
   
   <symbol width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="turn">
-    <circle cx="10" cy="10" r="10" transform="rotate(-90 10 10)" fill="#FF9D2B"/>
+    <circle cx="10" cy="10" r="10" transform="rotate(-90 10 10)" fill="var(--main_color)"/>
     <path d="M10.0004 8.55608L12.9858 11.7413C13.3093 12.0864 13.8343 12.0864 14.1578 11.7413C14.4813 11.3962 14.4813 10.836 14.1578 10.4909L10.5528 6.64461C10.2473 6.31867 9.75271 6.31867 9.448 6.64461L5.84299 10.4909C5.51952 10.836 5.51952 11.3962 5.84299 11.7413C6.16646 12.0864 6.6915 12.0864 7.01497 11.7413L10.0004 8.55608Z" fill="white"/>
   </symbol>
 
