@@ -13757,10 +13757,10 @@ background: #64C841;
 }
 
 .details .audio_media .media-control.media-play {
-    background: #0B00D8;
+    background: var(--main_color);
 }
 .details .audio_media .media-meter {
-    background-color: #0B00D8;
+    background-color: var(--main_color);
 }
 .details .audio_media .media-toolbar {
     background: #DEECFF;
@@ -13782,4 +13782,33 @@ background: #64C841;
     width: 19px;
     height: 19px;
     margin-right: 5px;
+}
+
+.details_item-link .details_item-body {
+    display: none;
+}
+.details_item-link.open .details_item-body {
+    display: block;
+}
+.details_item-link.open {
+
+}
+
+
+.details_item-body {
+	overflow: hidden;
+	position: relative;    
+}
+.details_item-body.hide {
+	height: 300px;
+}
+.details_item-body.hide:after{
+	content: "";
+	display: block;
+	height: 100px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 75%)
 }
