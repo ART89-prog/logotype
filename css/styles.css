@@ -13851,34 +13851,16 @@ background: #64C841;
     border-bottom: 2px solid #332894;
     border-right: 2px solid #332894;
 }
+.training .nice-select .option {
+    padding-left: 5px;
+    padding-right: 5px;
+}
 .training .nice-select .list {
-    background-color: #fff;
-    border-radius: 15px;
-    width: 100%;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #0A00C5;;
-    box-shadow: none;
-    box-sizing: border-box;
-    margin-top: 0px;
-    opacity: 0;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    color: #000000;
-    overflow: hidden;
-    padding: 10px 0;
-    pointer-events: none;
-    position: absolute;
+    padding: 10px;
     top: calc(100% + 5px);
     left: 0;
-    -webkit-transform-origin: 50% 0;
-    -ms-transform-origin: 50% 0;
-    transform-origin: 50% 0;
-    -webkit-transform: scale(0.75) translateY(-21px);
-    -ms-transform: scale(0.75) translateY(-21px);
-    transform: scale(0.75) translateY(-21px);
-    -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
-    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
-    z-index: 9;
+    border-radius: 15px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #0A00C5;
 }
 .training .courses .course .stickers {
     flex-direction: column;    
@@ -13963,48 +13945,48 @@ background: #64C841;
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
-    color: #4B45B9;
+    color: var(--main_color);
     margin-bottom: 8px;
 }
 
-table{
+.statistic table{
     border: 0.689286px solid #C8D2DA;
     width: 100%;
 	margin-bottom: 24px;
 	border-collapse: collapse; 
 }
-table thead {
-    background: #0400A5;
+.statistic table thead {
+    background: var(--main_color);
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
     text-align: center;
     color: #FFFFFF;
 }
-table thead th {
+.statistic table thead th {
     padding: 7px 17px;
     border: 0.689286px solid rgba(21, 21, 21, 0.15);
 }
-table thead th:first-child {
+.statistic table thead th:first-child {
     text-align: start;
 }
 
-table tbody td {
+.statistic table tbody td {
     padding: 11px 17px;
     border: 0.689286px solid #C8D2DA;
     text-align: center;
 }
-table tbody td:first-child {
+.statistic table tbody td:first-child {
     text-align: start;
 }
-table tbody tr:nth-child(even){
+.statistic table tbody tr:nth-child(even){
     background: rgba(5, 0, 175, 0.01);
 }
-.table-wrap {
+.statistic .table-wrap {
     overflow-x: scroll;
     scrollbar-width: none; 
 }
-.table-wrap::-webkit-scrollbar {
+.statistic .table-wrap::-webkit-scrollbar {
     display: none; 
 }
 
@@ -14051,12 +14033,12 @@ table tbody tr:nth-child(even){
     height: 10px;
     left: 0;
     top: 4px;
-    background: #0601B7;
+    background: var(--main_color);
     border-radius: 50%;
 }
 .create-report button {
     padding: 8px 13px;   
-    background: #0601B7;
+    background: var(--main_color);
     border-radius: 55px;
     font-weight: 500;
     font-size: 14px;
@@ -14106,11 +14088,11 @@ table tbody tr:nth-child(even){
     border-radius: 16px;
     margin-bottom: 15px;
 }
-input[type=checkbox] {
+.generated-report input[type=checkbox] {
     display: none;
     opacity: 0;
 }
-label.checkbox {
+.generated-report label.checkbox {
     font-family: "Ubuntu";
     font-weight: 700;
     font-size: 15px;
@@ -14126,7 +14108,7 @@ label.checkbox {
     margin-right: auto;
     white-space: nowrap;
 }
-label.checkbox:before {
+.generated-report label.checkbox:before {
     position: absolute;
     top: 3px;
     left: 3px;
@@ -14138,7 +14120,7 @@ label.checkbox:before {
     width: 14px;
     height: 14px;
 }
-label.checkbox:after {
+.generated-report label.checkbox:after {
     position: absolute;
     top: 7px;
     left: 6px;
@@ -14149,13 +14131,13 @@ label.checkbox:after {
     transition: opacity .2s linear;
     transform: rotate(-45deg);
     opacity: 0;
-    border-bottom: 1.5px solid #0800C7;
-    border-left: 1.5px solid #0800C7;
+    border-bottom: 1.5px solid var(--main_color);
+    border-left: 1.5px solid var(--main_color);
 }
-input[type=checkbox]:checked + label.checkbox:after {
+.generated-report input[type=checkbox]:checked + label.checkbox:after {
     opacity: 1;
 }
-.create-report_date span {
+.generated-report .create-report_date span {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -14163,9 +14145,7 @@ input[type=checkbox]:checked + label.checkbox:after {
     margin-left: 10px;
     margin-right: 10px;
 }
-.page_title span {
-    color: #0A00C5;
-}
+
 
 
 .advice_items {
@@ -14203,8 +14183,6 @@ input[type=checkbox]:checked + label.checkbox:after {
     color: #505261;
 }
 
-.analitic {
-}
 .analitic_items {
     display: flex;
     flex-wrap: wrap;
@@ -14223,8 +14201,6 @@ input[type=checkbox]:checked + label.checkbox:after {
     display: flex;
     align-items: start;
     justify-content: space-between;
-}
-.analitic_item-info {
 }
 .analitic_item-title {
     font-weight: 700;
@@ -14274,8 +14250,7 @@ input[type=checkbox]:checked + label.checkbox:after {
 
 
 
-.analytics-enabled {
-}
+
 .analytics-enabled_item {
     display: flex;
     padding: 27px;
@@ -14290,8 +14265,6 @@ input[type=checkbox]:checked + label.checkbox:after {
 }
 .analytics-enabled_icon {
     margin-right: 23px;
-}
-.analytics-enabled_info {
 }
 .analytics-enabled_title {
     font-weight: 700;
