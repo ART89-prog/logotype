@@ -1342,8 +1342,25 @@
         font-size: 16px;
         margin-bottom: 5px;
     }
+    .content .statistic {
+        margin-top: 30px;
+    }
 
-
+    .create-report_title {
+        font-size: 18px;
+    }
+    .create-report ul li {
+        font-size: 14px;
+    }
+    .create-report ul li:before {
+        width: 7px;
+        height: 7px;
+        left: 0;
+        top: 5px;
+    }
+    .create-report button {
+        font-size: 12px;
+    }
 
 
 

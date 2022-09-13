@@ -793,6 +793,14 @@
         margin-left: 0px;
     }
 
+    .create-report ul li {
+        width: 100%;
+    }
+    .create-report_title {
+        font-size: 16px;
+    }
+
+
 
 
 
