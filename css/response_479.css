@@ -799,7 +799,16 @@
     .create-report_title {
         font-size: 16px;
     }
+    .create-report_list li {
+        margin-right: 0;
+    }
+    .generated-report_list li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 
+
+    
 
 
 
